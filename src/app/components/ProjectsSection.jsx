@@ -7,57 +7,57 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "Get To Work",
+    description: "A job portal to help job seekers with job recruiters",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/HarshSantoshi/getToWork",
+    previewUrl: "https://get-towork.vercel.app/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "MovieHub",
+    description: "A website to explore various Movies and Web series.",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/HarshSantoshi/MovieHub",
+    previewUrl: "https://movie-hubb.vercel.app/",
   },
   {
     id: 3,
     title: "E-commerce Application",
-    description: "Project 3 description",
+    description: "An Ecommerce Website developed using MERN stack.",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/HarshSantoshi/EcommerceWebsite",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "WhatsHub",
+    description: "A real time chat application developed using MERN stack and socket.io",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/HarshSantoshi/WhatsHub",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "Audio Zone",
+    description: "A music player website developed using HTML , CSS and Vanila Javascript",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/HarshSantoshi/Music-Playerhttps://github.com/HarshSantoshi/MusicPlayer/tree/main",
+    previewUrl: "https://music-player-blue-one.vercel.app/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "Snake Game",
+    description: "Classic arcade-style game where the player controls a growing snake,while avoiding collisions with walls and its own body.",
     image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Game"],
+    gitUrl: "https://github.com/HarshSantoshi/Snake-Game",
+    previewUrl: "https://snake-game-nine-umber.vercel.app/",
   },
 ];
 
@@ -97,8 +97,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Game"
+          isSelected={tag === "Game"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
