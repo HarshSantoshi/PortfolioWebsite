@@ -6,10 +6,7 @@ const EducationSection = () => {
         <section id="education">
 
             <h1 className="section-heading mb75px">
-                <span>
-                    <i className="fas fa-graduation-cap" aria-hidden="true"></i>
-                    
-                </span>
+                
                 <span className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'> Education </span>
             </h1>
 
@@ -18,7 +15,7 @@ const EducationSection = () => {
                 <div className="timeline-box left ">
                     <div className="timeline-container">
                         <div className="timeline-logo">
-                        <Image src="/images/dtu.jpg" width={500} height={500} />
+                        <Image className ="hidden sm:block" src="/images/dtu.jpg" width={500} height={500} />
                         </div>
                         <h3 className="education-designation  m0"> B.Tech Software Engineering </h3>
                         <h4 className="education-company-name "> Delhi Technological University </h4>
@@ -30,7 +27,7 @@ const EducationSection = () => {
                 <div className="timeline-box right ">
                     <div className="timeline-container">
                         <div className="timeline-logo">
-                        <Image src="/images/schoollogo.jpg" width={500} height={500} />
+                        <Image className ="hidden sm:block" src="/images/schoollogo.jpg" width={500} height={500} />
                         </div>
                         <h3 className="education-designation  m0 "> Class XII </h3>
                         <h4 className="education-company-name "> Satyakaam International School</h4>
@@ -42,7 +39,7 @@ const EducationSection = () => {
                 <div className="timeline-box left ">
                     <div className="timeline-container">
                         <div className="timeline-logo">
-                        <Image src="/images/schoollogo.jpg" width={500} height={500} />
+                        <Image className ="hidden sm:block" src="/images/schoollogo.jpg" width={500} height={500} />
                         </div>
                         <h3 className="education-designation  m0"> Class X </h3>
                         <h4 className="education-company-name "> Satyakaam International School </h4>

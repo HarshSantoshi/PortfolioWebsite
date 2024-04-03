@@ -7,7 +7,11 @@
     color: var(--HeadingColor);
     font-weight: 600;
     font-size: 1.2rem;
+    @media-250px{
+        font-size : 1.0rem;
+    }
 }
+
 
 .education-duration {
     font-weight: 100;
@@ -47,7 +51,33 @@
     border-radius: 50%;
     z-index: 1;
 }
-
+@media (max-width : 450px) {
+    .education-company-name {
+        font-size: 12px;
+        text-align:left;
+        padding: 0;
+        margin-left:0px;
+    }
+    .education-designation {
+        font-size: 10px;
+        text-align:left;
+        padding: 0;
+    }
+    .education-duration {
+        font-size : 10px;
+        text-align:left;
+    }
+    .education-description{
+        font-size :11px;
+        line-height:17px;
+        padding: 0;
+        text-align:left;
+    }
+    .timeline-box::after{
+        width:8px;
+        height :8px;
+    }
+}
 .timeline-box:nth-child(2n) {
     left: 53%;
 }
@@ -79,7 +109,8 @@
     width: 0;
     top: 10%;
     left: 50%;
-    border: 1px dashed rgb(165, 165, 228);
+    border: 1px dashed;
+    border-image: linear-gradient(to bottom, green, yellow) 1;    
     height: 66%;
 }
 
@@ -93,7 +124,7 @@
     transform: rotate(90deg);
     margin-top: -35px;
     display: block;
-    color: var(--HeadingColor);
+    color: green;
     font-size: 24px;
 
 }
