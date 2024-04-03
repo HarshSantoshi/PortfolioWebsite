@@ -15,9 +15,18 @@ const navLinks = [
     path: "#projects",
   },
   {
+    title: "Education",
+    path: "#education"
+  }, 
+  {
+    title: "Skills",
+    path: "#skills"
+  }
+  ,
+  {
     title: "Contact",
     path: "#contact",
-  },
+  }
 ];
 
 const Navbar = () => {
