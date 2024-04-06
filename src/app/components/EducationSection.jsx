@@ -7,7 +7,7 @@ const EducationSection = () => {
 
             <h1 className="section-heading mb75px">
                 
-                <span className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'> Education </span>
+                <span className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>My Education </span>
             </h1>
 
             <div className="timeline">
