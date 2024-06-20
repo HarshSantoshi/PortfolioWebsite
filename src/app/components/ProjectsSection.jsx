@@ -7,12 +7,12 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Get To Work",
-    description: "A job portal to help job seekers with job recruiters",
+    title: "HealthMate",
+    description: "Webapp to help patients book appointments with doctor",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/HarshSantoshi/getToWork",
-    previewUrl: "https://get-towork.vercel.app/",
+    previewUrl: "https://harshsantoshi.vercel.app/",
   },
   {
     id: 2,

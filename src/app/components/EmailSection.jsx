@@ -25,18 +25,20 @@ const EmailSection = () => {
       // Tell the server we're sending JSON.
       headers: {
         "Content-Type": "application/json",
+        Accept : "application/json"
       },
       // Body of the request is the JSON data we created above.
       body: JSONdata,
     };
 
     const response = await fetch(endpoint, options);
-    const resData = await response.json();
+    console.log(response)
+    // const resData = await response.json();
 
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
+    // if (response.status === 200) {
+    //   // console.log("Message sent.");
+    //   setEmailSubmitted(true);
+    // }
   };
 
   return (
