@@ -11,7 +11,7 @@ const projectsData = [
     description: "Webapp to help patients book appointments with doctor",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/HarshSantoshi/getToWork",
+    gitUrl: "https://github.com/HarshSantoshi/Health-Mate",
     previewUrl: "https://harshsantoshi.vercel.app/",
   },
   {

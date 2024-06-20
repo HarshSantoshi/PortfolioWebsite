@@ -6,40 +6,31 @@ import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [result, setResult] = React.useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
+    formData.append("access_key", "baa5d12f-237b-489a-8646-b44ede674746");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-        Accept : "application/json"
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
+      body: formData
+    });
 
-    const response = await fetch(endpoint, options);
-    console.log(response)
-    // const resData = await response.json();
+    const data = await response.json();
 
-    // if (response.status === 200) {
-    //   // console.log("Message sent.");
-    //   setEmailSubmitted(true);
-    // }
+    if (data.success) {
+      setResult("Email sent! I will connect you soon. Thank you");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
   };
+
 
   return (
     <section
@@ -67,12 +58,8 @@ const EmailSection = () => {
         </div>
       </div>
       <div>
-        {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">
-            Email sent successfully!
-          </p>
-        ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
+        
+            <form className="flex flex-col" onSubmit={onSubmit}>
             <div className="mb-6">
               <label
                 htmlFor="email"
@@ -126,7 +113,9 @@ const EmailSection = () => {
               Send Message
             </button>
           </form>
-        )}
+
+          <span>{result}</span>
+        
       </div>
     </section>
   );

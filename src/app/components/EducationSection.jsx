@@ -15,7 +15,7 @@ const EducationSection = () => {
                 <div className="timeline-box left ">
                     <div className="timeline-container">
                         <div className="timeline-logo">
-                        <Image className ="hidden sm:block" src="/images/dtu.jpg" width={500} height={500} />
+                        <Image className ="hidden sm:block" src="/images/dtu.jpg" width={500} height={500} margin={10} />
                         </div>
                         <h3 className="education-designation  m0"> B.Tech Software Engineering </h3>
                         <h4 className="education-company-name "> Delhi Technological University </h4>
@@ -27,7 +27,7 @@ const EducationSection = () => {
                 <div className="timeline-box right ">
                     <div className="timeline-container">
                         <div className="timeline-logo">
-                        <Image className ="hidden sm:block" src="/images/schoollogo.jpg" width={500} height={500} />
+                        <Image className ="hidden sm:block" src="/images/schoollogo.jpg" width={500} height={500} margin={10} />
                         </div>
                         <h3 className="education-designation  m0 "> Class XII </h3>
                         <h4 className="education-company-name "> Satyakaam International School</h4>
@@ -39,7 +39,7 @@ const EducationSection = () => {
                 <div className="timeline-box left ">
                     <div className="timeline-container">
                         <div className="timeline-logo">
-                        <Image className ="hidden sm:block" src="/images/schoollogo.jpg" width={500} height={500} />
+                        <Image className ="hidden sm:block" src="/images/schoollogo.jpg" width={500} height={500} margin={10} />
                         </div>
                         <h3 className="education-designation  m0"> Class X </h3>
                         <h4 className="education-company-name "> Satyakaam International School </h4>
