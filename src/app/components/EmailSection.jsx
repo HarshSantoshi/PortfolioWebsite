@@ -5,6 +5,7 @@ import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
+
 const EmailSection = () => {
   const [result, setResult] = React.useState("");
 
@@ -12,8 +13,7 @@ const EmailSection = () => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
-
-    formData.append("access_key", process.env.RESEND_API_KEY);
+    formData.append("access_key", process.env.EMAIL_API_KEY);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
