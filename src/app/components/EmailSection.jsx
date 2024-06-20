@@ -13,7 +13,7 @@ const EmailSection = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "baa5d12f-237b-489a-8646-b44ede674746");
+    formData.append("access_key", process.env.RESEND_API_KEY);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
